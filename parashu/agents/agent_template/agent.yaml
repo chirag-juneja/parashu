@@ -1,0 +1,15 @@
+name: agent_template
+version: 0.1.0
+runtime: python3.13
+inputs:
+  - name: text
+    type: string
+outputs:
+  - name: summary
+    type: string
+resources:
+  cpu: 1
+  memory: 0.5GB
+execution_hints:
+  timeout: 30
+  retries: 2
